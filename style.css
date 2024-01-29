@@ -1,1 +1,74 @@
 @import "./Normalize.css";
+
+body {
+    display: grid;
+    grid-template: 1fr 6fr/1fr 5fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #1992d4;
+    color: white;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+    background-color: #e2e8f0;
+    padding: 15px;
+}
+
+.projects-wrapper {
+    grid-area: projects;
+}
+
+.announcements-wrapper {
+    grid-area: announcements;
+}
+
+.trending-wrapper {
+    grid-area: trending;
+}
+
+.project-card {
+    background-color: white;
+}
+
+.announcements {
+    background-color: white;
+}
+
+.trendings {
+    background-color: white;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
