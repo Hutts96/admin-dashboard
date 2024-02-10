@@ -22,6 +22,9 @@ body {
 header {
     grid-area: header;
     font-weight: bold;
+    display: grid;
+    padding: 1rem 0;
+    gap: 1rem;
 }
 
 .sidebar {
@@ -30,7 +33,6 @@ header {
     color: white;
     padding: 1rem;
     font-weight: 900;
-    /* font-size: 1.1rem; */
 }
 
 .sidebar-inner-wrapper {
@@ -91,7 +93,7 @@ main {
     margin-bottom: 5px;
     margin-top: 10px;
     font-weight: bold;
-    font-size: unset;
+    font-size: 14px;
 }
 
 .project-body {
@@ -112,14 +114,11 @@ main {
     ;
 }
 
-header {
-    display: grid;
-    grid-template-rows: 1fr 1.5fr;
-}
-
 .upper-header {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: center;
+    /* margin-bottom: 1.2rem; */
 }
 
 .lower-header {
@@ -130,7 +129,24 @@ header {
 .links {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
 }
+
+.link {
+    background-color: #1992d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 2rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+}
+
 
 .projects {
     display: grid;
@@ -183,4 +199,108 @@ header {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     color: #636363;
+}
+
+img {
+    height: 1rem;
+}
+
+.logo {
+    height: 2.6rem
+}
+
+.site-tab {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.meta-tab {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.tab-text {
+    margin-left: .75rem;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: larger;
+    font-weight: bold;
+    margin-left: .75rem;
+    font-size: 1.5rem;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem 1rem 1.5rem;
+    width: 75%;
+
+}
+
+.search-icon {
+    margin-right: .75rem;
+    height: 1.2rem;
+}
+
+.search-bar>input {
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 30px;
+    flex: 1;
+    width: 100%;
+    height: 1.43rem;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+.user-avatar {
+    height: 3.4rem;
+    border-radius: 100%;
+    ;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.user-name-wrapper {
+    margin-left: .75rem;
+}
+
+.user-greeting {
+    font-size: small;
+}
+
+.user-name {
+    font-size: large;
+    margin-top: .25rem;
+}
+
+.user-tab {
+    display: flex;
+    align-items: center;
+}
+
+.user-tab>.user-avatar {
+    height: 2.5rem;
+    margin: 0 1.5rem;
+}
+
+.bell-icon {
+    height: 1.2rem;
 }
