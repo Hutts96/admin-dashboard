@@ -87,6 +87,8 @@ main {
     border-left: 6px solid #f0b429;
     padding: 1.2rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
@@ -111,7 +113,6 @@ main {
 .trendings {
     background-color: white;
     border-radius: 8px;
-    ;
 }
 
 .upper-header {
@@ -160,8 +161,8 @@ main {
     margin: 1rem;
     font-size: small;
     flex: 1;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
 
 .announcements {
@@ -183,7 +184,7 @@ main {
     border-bottom: 2px solid #636363aa;
     margin-top: 0;
     margin-bottom: 0;
-    padding: .5rem;
+    padding: .75rem;
 }
 
 .announcement-title {
@@ -302,5 +303,52 @@ input:focus {
 }
 
 .bell-icon {
+    height: 1.2rem;
+}
+
+.trend-picture {
+    height: 2.5rem;
+    border-radius: 100%;
+    margin: .75rem;
+}
+
+.trend {
+    display: flex;
+}
+
+.trendings {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-subtext {
+    color: #636363;
+    font-size: small;
+    font-weight: bold;
+}
+
+.trend-name {
+    font-size: small;
+    margin-bottom: .10rem;
+}
+
+.inner-trend-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-options {
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.project-option {
+    margin: 0 .5rem;
+
+}
+
+.project-option>img {
     height: 1.2rem;
 }
